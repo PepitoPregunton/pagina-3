@@ -1,0 +1,58 @@
+html {
+    
+.montserrat-uniquifier> {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:  weight;
+    font-style: normal;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-color: rgb(59, 2, 99);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+.conteiner {
+    width: 400px;
+    margin: 0 auto;
+    color: black;
+}
+
+section article {
+    background-color: #efefef;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.15rem 0;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem #efefef
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: rgb(62, 2, 104);
+}
+
+footer p {
+    color: #efefef;
+}
+
+section article h3 {
+    
+    text-align: center;
+}
