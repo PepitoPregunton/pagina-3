@@ -7,8 +7,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+
+
 </head>
 <body>
+
+    <form id="buscador">
+        <input type="text" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+    
+    <script>
+        const buscador = document.getElementById('buscador');
+    
+        buscador.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const terminoBusqueda = buscador.querySelector('input[type="text"]').value.toLowerCase();
+    
+        const rutasAlbumes = {
+            "oasis": "https://pepitopregunton.github.io/pagina-4/",
+            "feliz cumpleaños ferxxo": "https://pepitopregunton.github.io/pagina-5/",
+            "yo hago lo que me da la gana": "https://pepitopregunton.github.io/pagina-6/",
+            
+    };
+    
+        if (terminoBusqueda in rutasAlbumes) {
+            console.log("Redirigiendo a: " + rutasAlbumes[terminoBusqueda]); 
+            window.location.href = rutasAlbumes[terminoBusqueda];
+        } else {
+            alert("Álbum no encontrado.");
+        }
+        });
+    </script>
+    
+
+
 
     <header>
         <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-logo%2C-guitar-logo%2C-music-3d-gold-logo-design-template-2251cca626acda3bea3ce36dbd68b3d2_screen.jpg?ts=1678649321" alt="">
@@ -98,5 +133,6 @@
 </section>
 </footer>
 </div>
-</body>
+
+<script src="js/script.js"></script> </body>
 </html>
