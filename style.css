@@ -108,3 +108,18 @@ div.image-row p{
     color: #efefef;
     
 }
+
+#buscador {
+    display: flex;
+}
+
+#buscador input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#buscador button {
+    padding: 10px;
+    background-color: #3a0606;
+    color: white;
+}
